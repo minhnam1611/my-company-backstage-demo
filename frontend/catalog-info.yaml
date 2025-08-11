@@ -6,7 +6,7 @@ metadata:
 spec:
   type: website
   lifecycle: production
-  owner: team-a
+  owner: guests
   system: my-system
   consumesApis:
     - my-api
