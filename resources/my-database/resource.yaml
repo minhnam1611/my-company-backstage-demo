@@ -15,5 +15,5 @@ metadata:
   description: "S3 bucket cho file upload"
 spec:
   type: s3-bucket
-  owner: team-a
+  owner: guests
   system: my-system
