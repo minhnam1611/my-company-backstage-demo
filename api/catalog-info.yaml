@@ -6,6 +6,6 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: team-a
+  owner: guests
   definition:
     $text: ./openapi.yaml
