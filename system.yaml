@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: my-system
+  description: "Hệ thống quản lý ứng dụng Node.js + React"
+  tags:
+    - nodejs
+    - react
+spec:
+  owner: team-a

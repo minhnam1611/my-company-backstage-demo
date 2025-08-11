@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-docs
+  description: "Tài liệu hệ thống"
+  tags:
+    - documentation
+spec:
+  type: documentation
+  lifecycle: production
+  owner: team-a
+  system: my-system

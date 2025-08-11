@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-frontend
+  description: "Frontend React app"
+  tags:
+    - frontend
+    - react
+spec:
+  type: website
+  lifecycle: production
+  owner: team-a
+  system: my-system
+  consumesApis:
+    - my-api
