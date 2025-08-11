@@ -8,7 +8,7 @@ metadata:
     - full-system
 spec:
   owner: guests
-  domain: main-domain
+  # domain: main-domain
   # Liên kết đến các component khác
   dependsOn:
     - component:default/my-backend
