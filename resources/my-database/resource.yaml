@@ -2,8 +2,18 @@ apiVersion: backstage.io/v1alpha1
 kind: Resource
 metadata:
   name: my-database
-  description: "PostgreSQL database cho backend"
+  description: "Database chính của hệ thống"
 spec:
   type: database
+  owner: team-a
+  system: my-system
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: my-storage
+  description: "S3 bucket cho file upload"
+spec:
+  type: s3-bucket
   owner: team-a
   system: my-system

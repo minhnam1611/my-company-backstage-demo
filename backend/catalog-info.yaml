@@ -2,10 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: my-backend
-  description: "Backend service Node.js"
-  tags:
-    - backend
-    - nodejs
+  description: "Service backend chính"
 spec:
   type: service
   lifecycle: production
@@ -13,5 +10,3 @@ spec:
   system: my-system
   providesApis:
     - my-api
-  dependsOn:
-    - resource:default/my-database

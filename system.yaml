@@ -2,9 +2,29 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: my-system
-  description: "Hệ thống quản lý ứng dụng Node.js + React"
+  description: "Hệ thống demo gồm backend, frontend, API và docs"
   tags:
-    - nodejs
-    - react
+    - demo
+    - full-system
 spec:
   owner: team-a
+  domain: main-domain
+  # Liên kết đến các component khác
+  dependsOn:
+    - component:default/my-backend
+    - component:default/my-frontend
+    - component:default/my-api
+    - component:default/my-docs
+---
+# Liên kết đến file resource.yaml nếu có resource riêng
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: my-system-resources
+spec:
+  targets:
+    - ./resource.yaml
+    - ./backend/catalog-info.yaml
+    - ./frontend/catalog-info.yaml
+    - ./api/catalog-info.yaml
+    - ./docs/catalog-info.yaml
