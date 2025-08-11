@@ -1,0 +1,58 @@
+openapi: 3.0.0
+info:
+  title: My Company API
+  version: 1.0.0
+  description: |
+    Đây là API mẫu để demo cho Backstage.
+    Bạn có thể chỉnh sửa thông tin này để phù hợp với hệ thống thực tế.
+servers:
+  - url: https://api.mycompany.com/v1
+    description: Production server
+  - url: https://staging.api.mycompany.com/v1
+    description: Staging server
+paths:
+  /users:
+    get:
+      summary: Lấy danh sách người dùng
+      operationId: getUsers
+      responses:
+        '200':
+          description: Danh sách người dùng trả về thành công
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+  /users/{id}:
+    get:
+      summary: Lấy thông tin chi tiết của một người dùng
+      operationId: getUserById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Thông tin người dùng
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          example: 123
+        name:
+          type: string
+          example: Nguyễn Văn A
+        email:
+          type: string
+          format: email
+          example: nguyenvana@example.com
