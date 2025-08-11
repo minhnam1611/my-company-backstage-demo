@@ -23,7 +23,7 @@ metadata:
   name: my-system-resources
 spec:
   targets:
-    - ./resource.yaml
+    - ./resources/my-database/resource.yaml
     - ./backend/catalog-info.yaml
     - ./frontend/catalog-info.yaml
     - ./api/catalog-info.yaml
