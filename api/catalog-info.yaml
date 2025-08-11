@@ -2,11 +2,10 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: my-api
-  description: "API GraphQL chính"
+  description: My API description
 spec:
-  type: graphql
+  type: openapi
   lifecycle: production
   owner: team-a
-  system: my-system
   definition:
     $text: ./openapi.yaml
