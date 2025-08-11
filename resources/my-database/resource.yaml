@@ -5,7 +5,7 @@ metadata:
   description: "Database chính của hệ thống"
 spec:
   type: database
-  owner: team-a
+  owner: guests
   system: my-system
 ---
 apiVersion: backstage.io/v1alpha1
