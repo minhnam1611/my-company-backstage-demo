@@ -3,8 +3,7 @@ info:
   title: My Company API
   version: 1.0.0
   description: |
-    Đây là API mẫu để demo cho Backstage.
-    Bạn có thể chỉnh sửa thông tin này để phù hợp với hệ thống thực tế.
+    API mẫu để demo cho Backstage.
 servers:
   - url: https://api.mycompany.com/v1
     description: Production server
